@@ -14,6 +14,17 @@ window.addEventListener('scroll', stickynavbar);
 window.addEventListener('load', function () {
   var popupAdModal = new bootstrap.Modal(document.getElementById('popupAdModal'));
   popupAdModal.show();
+
+  // Set display to block when modal is shown
+  document.getElementById('popupAdModal').style.display = 'block';
+});
+
+// Ensure modal display is set to none when hidden and re-enable pointer events
+document.getElementById('popupAdModal').addEventListener('hidden.bs.modal', function () {
+  document.getElementById('popupAdModal').style.display = 'none';
+  document.getElementById('popupAdModal').style.zIndex='-10';
+  document.querySelector('.modal-backdrop').remove();
+  document.body.classList.remove('modal-open');
 });
 
 
