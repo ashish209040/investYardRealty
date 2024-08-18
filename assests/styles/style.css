@@ -180,7 +180,9 @@ nav{
   align-items: baseline;
   justify-content: center;
 }
-
+#popupAdModal {
+  display: none;
+}
 .main-hero-text {
   color: #ffffff;
   text-shadow: 1px 10px 10px rgba(0, 0, 0);
