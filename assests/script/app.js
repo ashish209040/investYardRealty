@@ -11,6 +11,11 @@ function stickynavbar() {
 }
 window.addEventListener('scroll', stickynavbar);
 
+window.addEventListener('load', function () {
+  var popupAdModal = new bootstrap.Modal(document.getElementById('popupAdModal'));
+  popupAdModal.show();
+});
+
 
 // animation
 function reveal() {
