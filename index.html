@@ -20,6 +20,44 @@
 </head>
 
 <body>
+  <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="formModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title display-5 fw-medium text-center" id="formModalLabel">Fill Your Query</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Form -->
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" required id="name" placeholder="Enter your name">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input type="email" class="form-control" required id="email" placeholder="Enter your email">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Mobile Number</label>
+              <input type="email" class="form-control" required id="email" placeholder="Enter your mobile number">
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" required rows="3" placeholder="Enter your message"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <div class="modal-button">
+            <button type="button" class="">Submit</button>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
   <header class="position-relative">
     <nav id="NavBar" class="navbar navbar-expand-lg p-0 z-3 w-100">
       <div class="container-fluid px-1 w-100 bg-light">
@@ -68,7 +106,7 @@
                   Discover the best properties in your area with ease and confidence.
                 </div>
                 <div class="contact-btn ">
-                  <a href="" class="button z-3 fw-bolder">Book An Appointment</a>
+                  <a href="" class="button z-3 fw-bolder" data-bs-toggle="modal" data-bs-target="#formModal">Book An Appointment</a>
                 </div>
               </div>
             </div>
@@ -85,7 +123,7 @@
                   Explore a curated selection of premium properties in the most sought-after locations.
                 </div>
                 <div class="contact-btn ">
-                  <a href="" class="button z-3 fw-bolder">Properties</a>
+                  <a href="" class="button z-3 fw-bolder" data-bs-toggle="modal" data-bs-target="#formModal">Properties</a>
                 </div>
               </div>
             </div>
@@ -102,7 +140,7 @@
                   Benefit from our deep local knowledge and personalized service. We help you find the perfect investment.
                 </div>
                 <div class="contact-btn ">
-                  <a href="" class="button z-3 fw-bolder">Know More</a>
+                  <a href="" class="button z-3 fw-bolder" data-bs-toggle="modal" data-bs-target="#formModal">Know More</a>
                 </div>
               </div>
             </div>
@@ -145,7 +183,7 @@
                   Sector 79, Gurugram
                 </div>
                 <div class="contact mt-4">
-                  <a class="fw-medium fs-6" href="contact.html">Know Price</a>
+                  <a class="fw-medium fs-6" href=""  data-bs-toggle="modal" data-bs-target="#formModal">Know Price</a>
                 </div>
               </div>
             </div>
@@ -162,7 +200,7 @@
                   Dwarka Expressway, Gurugram
                 </div>
                 <div class="contact mt-4">
-                  <a class="fw-medium fs-6" href="contact.html">Know Price</a>
+                  <a class="fw-medium fs-6" href=""  data-bs-toggle="modal" data-bs-target="#formModal">Know Price</a>
                 </div>
               </div>
             </div>
@@ -179,7 +217,7 @@
                   Sector 77, Gurugram
                 </div>
                 <div class="contact mt-4">
-                  <a class="fw-medium fs-6" href="contact.html">Know Price</a>
+                  <a class="fw-medium fs-6" href=""  data-bs-toggle="modal" data-bs-target="#formModal">Know Price</a>
                 </div>
               </div>
             </div>
@@ -196,7 +234,7 @@
                   Sector 93, Gurugram
                 </div>
                 <div class="contact mt-4">
-                  <a class="fw-medium fs-6" href="contact.html">Know Price</a>
+                  <a class="fw-medium fs-6" href="" data-bs-toggle="modal" data-bs-target="#formModal">Know Price</a>
                 </div>
               </div>
             </div>
@@ -213,7 +251,7 @@
                   Sector 85, Gurugram
                 </div>
                 <div class="contact mt-4">
-                  <a class="fw-medium fs-6" href="contact.html">Know Price</a>
+                  <a class="fw-medium fs-6" href="" data-bs-toggle="modal" data-bs-target="#formModal">Know Price</a>
                 </div>
               </div>
             </div>
@@ -230,7 +268,7 @@
                   Sector 106, Gurugram
                 </div>
                 <div class="contact mt-4">
-                  <a class="fw-medium fs-6" href="contact.html">Know Price</a>
+                  <a class="fw-medium fs-6" href="" data-bs-toggle="modal" data-bs-target="#formModal">Know Price</a>
                 </div>
               </div>
             </div>
